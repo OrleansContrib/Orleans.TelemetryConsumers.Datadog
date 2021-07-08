@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  <PropertyGroup>
+    <PackageId>Microsoft.Orleans.OrleansTelemetryConsumers.Datadog</PackageId>
+    <Title>Microsoft Orleans Telemetry Consumer - Datadog</Title>
+    <Description>Datadog implementation of Orleans Telemetry API.</Description>
+  </PropertyGroup>
+  
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Orleans.TelemetryConsumers.NewRelic</AssemblyName>
     <RootNamespace>Orleans.TelemetryConsumers.Datadog</RootNamespace>
   </PropertyGroup>
 
