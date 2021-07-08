@@ -10,3 +10,4 @@ plot.html
 results.bin
 **/.vs
 *.env
+Orleans.TelemetryConsumers.Datadog.sln.DotSettings.user
