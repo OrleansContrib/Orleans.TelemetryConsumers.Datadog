@@ -36,8 +36,16 @@ namespace Orleans.TelemetryConsumers.Datadog
         /// Careful, there could be tens of metrics tracked!
         /// Metric names are case sensitive.
         /// </param>
-        public DatadogMetricTelemetryConsumer(string[] namesOfRelevantMetrics) : this()
+        /// <param name="statsdConfig">
+        /// Datadog statsd configuration.
+        /// </param>
+        public DatadogMetricTelemetryConsumer(
+            string[] namesOfRelevantMetrics,
+            StatsdConfig statsdConfig)
         {
+            _service = new DogStatsdService();
+            _service.Configure(statsdConfig);
+            
             _namesOfRelevantMetrics = namesOfRelevantMetrics;
         }
 
