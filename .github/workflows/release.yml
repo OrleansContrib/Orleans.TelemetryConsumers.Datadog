@@ -1,4 +1,4 @@
-name: release
+name: Release
 on:
   workflow_dispatch:
   release:
@@ -20,6 +20,6 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
       - name: Nuget
-        run: dotnet pack
+        run: dotnet pack -p:PackageID=test-pkg
       - name: Publish nuget
-        run: dotnet nuget push **/Microsoft.Orleans.OrleansTelemetryConsumers.Datadog.*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
+        run: dotnet nuget push **/test-pkg.*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
