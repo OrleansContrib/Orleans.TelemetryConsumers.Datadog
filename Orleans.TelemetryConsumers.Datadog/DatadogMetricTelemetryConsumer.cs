@@ -45,7 +45,7 @@ namespace Orleans.TelemetryConsumers.Datadog
         {
             _service = new DogStatsdService();
             _service.Configure(statsdConfig);
-            
+
             _namesOfRelevantMetrics = namesOfRelevantMetrics;
         }
 
