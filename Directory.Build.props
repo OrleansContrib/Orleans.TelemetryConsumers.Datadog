@@ -1,5 +1,5 @@
 <Project>
     <PropertyGroup>
-        <DatadogTelemetryConsumerVersion>0.0.1</DatadogTelemetryConsumerVersion>
+        <DatadogTelemetryConsumerVersion>1.0.0</DatadogTelemetryConsumerVersion>
     </PropertyGroup>
 </Project>
