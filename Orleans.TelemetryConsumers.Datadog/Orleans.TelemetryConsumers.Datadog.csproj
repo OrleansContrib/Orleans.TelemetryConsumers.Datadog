@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <PackageId>Microsoft.Orleans.TelemetryConsumers.Datadog</PackageId>
+        <PackageId>Orleans.TelemetryConsumers.Datadog</PackageId>
         <Title>Microsoft Orleans Telemetry Consumer - Datadog</Title>
         <Description>Datadog implementation of Orleans Telemetry API.</Description>
         <Authors>OrleansContrib</Authors>
